@@ -42,7 +42,7 @@ function reset() {
 
 # Function to clear database
 function clear() {
-	run_sql_query "DROP DATABASE IF EXISTS $DB_NAME;"
+	run_sql_query "DROP DATABASE IF EXISTS $DB_NAME;CREATE DATABASE $DB_NAME;"
 }
 
 # Function to fill database
